@@ -3,10 +3,10 @@
     "short_name": "Orvibe",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
+    "background_color": "#0B0A0F",
+    "theme_color": "#0B0A0F",
     "description": "Orvibe is a live radio player. Tune FM and AM stations on a retro dial and listen free in your browser. Feel the frequency.",
-    "orientation": "portrait-primary",
+    "orientation": "any",
     "prefer_related_applications": false,
     "icons": [
         {
@@ -31,5 +31,11 @@
             "type": "image/png",
             "purpose": "maskable"
         }
+    ],
+    "id": ".",
+    "scope": ".",
+    "categories": [
+        "music",
+        "entertainment"
     ]
 }
