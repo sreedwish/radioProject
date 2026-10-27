@@ -1,6 +1,6 @@
 {
-    "name": "radio_app",
-    "short_name": "radio_app",
+    "name": "Orvibe",
+    "short_name": "Orvibe",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
