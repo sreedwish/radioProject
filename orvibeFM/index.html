@@ -90,8 +90,15 @@
       var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) ||
         (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
       if (ios) {
-        text.textContent = 'Tap Share, then "Add to Home Screen".';
-        yes.style.display = 'none';
+        text.textContent = 'Tap Share, then scroll to "Add to Home Screen".';
+        yes.textContent = 'Share';
+        // Safari can't start an install, but it can open the share sheet,
+        // which has "Add to Home Screen".
+        yes.onclick = function () {
+          if (navigator.share) {
+            navigator.share({ title: 'Orvibe', url: location.href }).catch(function () {});
+          }
+        };
         setTimeout(show, 2500);
       }
     })();
